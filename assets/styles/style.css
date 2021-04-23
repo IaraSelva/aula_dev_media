@@ -1,0 +1,188 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+header{
+    background-color: #2c3e50;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav{
+    width: 80%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+.menu-items{
+    display: flex;
+    text-align: center;
+}
+.menu-items a{
+    padding: 15px;
+    font-size: 16px;
+    display: block;
+}
+.menu-items a:hover{
+    color: #1abc9c;
+}
+.menu-items img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.profile-container{
+    background-color: #1abc9c;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+.profile{
+    text-align: center;
+    color: #fff;
+}
+.profile img{
+    width: 240px;
+    border-radius: 100%;
+}
+.profile-title{
+    font-size: 45px;
+}
+.profile-subtitle{
+    font-size: 25px;
+}
+.profile-description{
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+#portfolio{
+    width: 80%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.portfolio-title{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2c3e50;
+}
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-container img{
+    width: 330px;
+    height: 240px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#sobre{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.sobre-title{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2c3e50;
+}
+.sobre-text{
+    font-size: 20px;
+    color: darkslategrey;
+    text-align: center;
+}
+.sobre-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contato{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.contato{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2c3e50;
+}
+.contato-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contato-container img{
+    width: 150px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 10px; 
+}
+
+@media(max-width: 1000px){
+    header{
+        padding-top: 10px;
+        padding-top: 10px;
+    }
+    nav{
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .menu-items{
+        justify-content: center;
+        padding: 0;
+    }
+    .profile-title{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 550px){
+    .navbar-brand{
+        display: block;
+        text-align: left;
+    }
+    .contato-container img{
+        width: 100px;
+        height: 80px;
+    }
+    .sobre-title{
+        font-size: 30px;
+    }
+    .portfolio-title{
+        font-size: 30px;
+    }
+    .contato{
+        font-size: 30px;
+    }
+    .menu-items a{
+        font-size: 10px;
+    }
+}
